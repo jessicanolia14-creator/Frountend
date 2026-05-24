@@ -1,0 +1,149 @@
+/* src/styles/filterresult.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#f5f1ea;
+}
+
+.filter-page{
+  min-height:100vh;
+  padding:40px;
+  background:#f5f1ea;
+}
+
+.filter-topbar{
+  margin-bottom:30px;
+}
+
+.back-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:#575a12;
+  font-weight:600;
+  background:#ebe6c9;
+  padding:12px 18px;
+  border-radius:14px;
+}
+
+.filter-header{
+  margin-bottom:40px;
+}
+
+.filter-header span{
+  display:inline-block;
+  background:#ebe6c9;
+  color:#575a12;
+  padding:8px 16px;
+  border-radius:999px;
+  font-size:13px;
+  font-weight:600;
+  margin-bottom:18px;
+}
+
+.filter-header h1{
+  font-size:46px;
+  color:#3f410d;
+  margin-bottom:12px;
+}
+
+.filter-header p{
+  color:#8d8667;
+  line-height:1.8;
+  max-width:650px;
+}
+
+.filter-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:25px;
+}
+
+.filter-card{
+  background:#faf8f3;
+  border:1px solid #e5dec7;
+  border-radius:28px;
+  overflow:hidden;
+  transition:0.3s;
+}
+
+.filter-card:hover{
+  transform:translateY(-5px);
+}
+
+.filter-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.filter-content{
+  padding:24px;
+}
+
+.category{
+  background:#ebe6c9;
+  color:#575a12;
+  padding:7px 15px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:600;
+  display:inline-block;
+  margin-bottom:16px;
+}
+
+.filter-content h3{
+  color:#3f410d;
+  font-size:24px;
+  margin-bottom:10px;
+}
+
+.filter-content p{
+  color:#777;
+  line-height:1.8;
+  margin-bottom:18px;
+}
+
+.info{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-bottom:20px;
+}
+
+.info span{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  color:#575a12;
+}
+
+.footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.footer button{
+  width:110px;
+  height:44px;
+  border:none;
+  border-radius:14px;
+  background:linear-gradient(
+    to right,
+    #6b6e17,
+    #3f410d
+  );
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+}

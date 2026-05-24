@@ -1,0 +1,281 @@
+/* src/styles/register.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#f5f1ea;
+}
+
+/* PAGE */
+.register-page{
+  width:100%;
+  min-height:100vh;
+  display:flex;
+  background:#f5f1ea;
+}
+
+/* LEFT SIDE */
+.register-left{
+  width:42%;
+  background:
+  linear-gradient(
+    rgba(63,65,13,0.82),
+    rgba(63,65,13,0.82)
+  ),
+  url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1200&auto=format&fit=crop');
+
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:50px;
+}
+
+.left-overlay{
+  max-width:340px;
+  text-align:center;
+  color:white;
+}
+
+.main-logo{
+  width:150px;
+  margin-bottom:25px;
+}
+
+.left-overlay h1{
+  font-size:46px;
+  margin-bottom:18px;
+}
+
+.left-overlay p{
+  font-size:16px;
+  line-height:1.8;
+  color:#ece7d2;
+}
+
+/* RIGHT SIDE */
+.register-right{
+  width:58%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:50px;
+}
+
+/* CARD */
+.register-card{
+  width:100%;
+  max-width:560px;
+  background:white;
+  padding:45px;
+  border-radius:28px;
+  box-shadow:
+  0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* HEADER */
+.register-header{
+  margin-bottom:35px;
+}
+
+.mini-badge{
+  display:inline-block;
+  background:#ebe6c9;
+  color:#575a12;
+  padding:8px 16px;
+  border-radius:999px;
+  font-size:13px;
+  font-weight:600;
+  margin-bottom:18px;
+}
+
+.register-header h2{
+  font-size:40px;
+  color:#3f410d;
+  margin-bottom:8px;
+}
+
+.register-header p{
+  color:#928a6d;
+  font-size:15px;
+}
+
+/* ROLE */
+.role-section{
+  margin-bottom:28px;
+}
+
+.role-section label{
+  display:block;
+  margin-bottom:14px;
+  font-size:14px;
+  font-weight:600;
+  color:#4d4b2b;
+}
+
+.role-container{
+  display:flex;
+  gap:18px;
+}
+
+.role-card{
+  flex:1;
+  height:90px;
+  border-radius:18px;
+  border:1.5px solid #ddd6bc;
+  background:#faf8f3;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  cursor:pointer;
+  transition:0.3s;
+  color:#5c5a37;
+}
+
+.role-card.active{
+  background:#f1edd7;
+  border:2px solid #575a12;
+  color:#3f410d;
+}
+
+.role-card:hover{
+  transform:translateY(-2px);
+}
+
+/* FORM */
+.register-form{
+  margin-top:10px;
+}
+
+.input-group{
+  margin-bottom:22px;
+}
+
+.input-group label{
+  display:block;
+  margin-bottom:10px;
+  font-size:14px;
+  font-weight:500;
+  color:#4d4b2b;
+}
+
+.input-box{
+  width:100%;
+  height:58px;
+  border:1.5px solid #ddd5bc;
+  border-radius:16px;
+  background:#faf8f3;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:0 18px;
+}
+
+.input-box svg{
+  color:#8b8568;
+}
+
+.input-box input{
+  width:100%;
+  border:none;
+  outline:none;
+  background:transparent;
+  font-size:15px;
+  color:#333;
+  font-family:'Poppins',sans-serif;
+}
+
+.eye-icon{
+  cursor:pointer;
+}
+
+/* BUTTON */
+.register-btn{
+  width:100%;
+  height:58px;
+  border:none;
+  border-radius:18px;
+  background:
+  linear-gradient(
+    to right,
+    #6b6e17,
+    #3f410d
+  );
+
+  color:white;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+  margin-top:10px;
+  transition:0.3s;
+}
+
+.register-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:
+  0 10px 20px rgba(63,65,13,0.25);
+}
+
+/* BOTTOM */
+.bottom-text{
+  text-align:center;
+  margin-top:28px;
+  color:#8f886d;
+  font-size:14px;
+}
+
+.bottom-text a{
+  color:#575a12;
+  text-decoration:none;
+  font-weight:600;
+  margin-left:5px;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+
+  .register-page{
+    flex-direction:column;
+  }
+
+  .register-left{
+    width:100%;
+    min-height:320px;
+  }
+
+  .register-right{
+    width:100%;
+    padding:25px;
+  }
+
+  .register-card{
+    padding:35px 25px;
+  }
+
+  .register-header h2{
+    font-size:32px;
+  }
+
+}
+
+@media(max-width:600px){
+
+  .role-container{
+    flex-direction:column;
+  }
+
+  .left-overlay h1{
+    font-size:38px;
+  }
+
+}

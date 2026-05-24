@@ -1,0 +1,271 @@
+/* src/styles/detailrekomendasikegiatan.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#f6f1eb;
+}
+
+.detail-page{
+  width:100%;
+  min-height:100vh;
+  padding:35px;
+  background:#f6f1eb;
+}
+
+/* TOPBAR */
+.detail-topbar{
+  margin-bottom:28px;
+}
+
+.back-btn{
+  width:150px;
+  height:52px;
+  border-radius:16px;
+  background:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  text-decoration:none;
+  color:#3f410d;
+  font-weight:600;
+  box-shadow:0 6px 20px rgba(0,0,0,0.05);
+  transition:0.3s;
+}
+
+.back-btn:hover{
+  transform:translateY(-2px);
+}
+
+/* HERO */
+.detail-hero{
+  width:100%;
+  height:420px;
+  border-radius:32px;
+  overflow:hidden;
+  position:relative;
+  margin-bottom:35px;
+}
+
+.detail-hero img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.detail-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    rgba(0,0,0,0.2),
+    rgba(0,0,0,0.7)
+  );
+
+  padding:45px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+}
+
+.detail-category{
+  width:max-content;
+  background:rgba(255,255,255,0.16);
+  color:white;
+  padding:8px 16px;
+  border-radius:999px;
+  font-size:13px;
+  margin-bottom:20px;
+  backdrop-filter:blur(5px);
+}
+
+.detail-overlay h1{
+  color:white;
+  font-size:52px;
+  margin-bottom:16px;
+}
+
+.detail-overlay p{
+  color:#ece8d7;
+  max-width:700px;
+  line-height:1.8;
+}
+
+/* CONTENT */
+.detail-content{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:30px;
+}
+
+/* LEFT */
+.detail-left{
+  display:flex;
+  flex-direction:column;
+  gap:28px;
+}
+
+/* CARD */
+.info-card,
+.description-card,
+.benefit-card,
+.join-card{
+  background:white;
+  border-radius:28px;
+  padding:32px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.info-card h2,
+.description-card h2,
+.benefit-card h2{
+  color:#3f410d;
+  margin-bottom:24px;
+  font-size:28px;
+}
+
+/* INFO GRID */
+.info-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+
+.info-item{
+  background:#f8f4ea;
+  border-radius:20px;
+  padding:20px;
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+  color:#575a12;
+}
+
+.info-item span{
+  font-size:13px;
+  color:#8d8667;
+}
+
+.info-item p{
+  font-size:15px;
+  font-weight:600;
+  margin-top:4px;
+  color:#3f410d;
+}
+
+/* DESCRIPTION */
+.description-card p{
+  color:#666;
+  line-height:1.9;
+  margin-bottom:18px;
+}
+
+/* BENEFIT */
+.benefit-list{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.benefit-item{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  background:#f8f4ea;
+  padding:18px;
+  border-radius:18px;
+  color:#3f410d;
+  font-weight:500;
+}
+
+/* RIGHT */
+.join-card{
+  position:sticky;
+  top:30px;
+}
+
+.join-top{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:20px;
+  color:#575a12;
+}
+
+.join-top h3{
+  font-size:26px;
+  color:#3f410d;
+}
+
+.join-card p{
+  color:#777;
+  line-height:1.8;
+  margin-bottom:28px;
+}
+
+.join-card button{
+  width:100%;
+  height:58px;
+  border:none;
+  border-radius:18px;
+  background:linear-gradient(
+    to right,
+    #575a12,
+    #3f410d
+  );
+
+  color:white;
+  font-size:15px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.join-card button:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 20px rgba(63,65,13,0.25);
+}
+
+/* RESPONSIVE */
+@media(max-width:950px){
+
+  .detail-content{
+    grid-template-columns:1fr;
+  }
+
+  .detail-overlay h1{
+    font-size:40px;
+  }
+
+}
+
+@media(max-width:700px){
+
+  .detail-page{
+    padding:20px;
+  }
+
+  .detail-hero{
+    height:350px;
+  }
+
+  .detail-overlay{
+    padding:28px;
+  }
+
+  .detail-overlay h1{
+    font-size:32px;
+  }
+
+  .info-grid{
+    grid-template-columns:1fr;
+  }
+
+}
