@@ -1,0 +1,100 @@
+.edit-layout{
+  display:flex;
+  min-height:100vh;
+  background:#f4f1e8;
+}
+
+.edit-main{
+  flex:1;
+  margin-left:280px;
+  padding:40px;
+}
+
+.edit-main h1{
+  font-size:32px;
+  color:#5e6120;
+  margin-bottom:20px;
+}
+
+.edit-card{
+  background:white;
+  border-radius:20px;
+  padding:30px;
+  max-width:900px;
+}
+
+.form-group{
+  margin-bottom:20px;
+}
+
+.form-group label{
+  display:block;
+  margin-bottom:8px;
+  font-weight:600;
+}
+
+.form-group input,
+.form-group textarea{
+  width:100%;
+  padding:14px;
+  border:1px solid #ddd;
+  border-radius:10px;
+  font-size:15px;
+  box-sizing:border-box;
+}
+
+.form-group textarea{
+  resize:none;
+}
+
+.simpan-btn{
+  background:#6f7d24;
+  color:white;
+  border:none;
+  padding:14px 24px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.upload-box{
+  border:2px dashed #d8d1c0;
+  border-radius:12px;
+  padding:30px;
+  text-align:center;
+  background:#faf9f5;
+}
+
+.upload-box input{
+  margin-top:10px;
+}
+
+.form-group select{
+  width:100%;
+  padding:14px;
+  border:1px solid #ddd;
+  border-radius:10px;
+}
+
+.button-group{
+  display:flex;
+  gap:12px;
+  justify-content:flex-end;
+}
+
+.batal-btn{
+  background:#ece8d2;
+  border:none;
+  padding:14px 22px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.simpan-btn{
+  background:#6f7d24;
+  color:white;
+  border:none;
+  padding:14px 22px;
+  border-radius:10px;
+  cursor:pointer;
+}

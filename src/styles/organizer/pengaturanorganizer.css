@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#f5f1e8;
+}
+
+/* ================= LAYOUT ================= */
+
+.pengaturan-layout{
+  display:flex;
+  min-height:100vh;
+}
+
+.pengaturan-main{
+  flex:1;
+  margin-left:300px;
+  padding:42px 46px;
+}
+
+/* ================= HEADER ================= */
+
+.pengaturan-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  margin-bottom:34px;
+}
+
+.pengaturan-header h1{
+  font-size: 35px;
+  font-weight:800;
+  line-height:1.1;
+  color:#000;
+  margin-bottom:10px;
+}
+
+.pengaturan-header p{
+  font-size:20px;
+  color:#666;
+  font-weight:400;
+}
+
+.header-icons{
+  display:flex;
+  gap:18px;
+}
+
+.header-icons svg{
+  color:#7d7313;
+  cursor:pointer;
+}
+
+/* ================= CARD ================= */
+
+.pengaturan-container{
+  display:flex;
+  flex-direction:column;
+  gap:28px;
+}
+
+.pengaturan-card{
+  background:#fff;
+  border-radius:28px;
+  padding:30px 34px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 4px 18px rgba(0,0,0,0.03);
+}
+
+.card-left{
+  display:flex;
+  align-items:center;
+  gap:24px;
+}
+
+.card-icon{
+  width:78px;
+  height:78px;
+  border-radius:24px;
+  background:#f1e8bf;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  color:#7d7313;
+}
+
+.card-info h2{
+  font-size:22px;
+  font-weight:700;
+  color:#111;
+  margin-bottom:6px;
+}
+
+.card-info p{
+  font-size:16px;
+  color:#666;
+  font-weight:400;
+}
+
+/* ================= BUTTON ================= */
+
+.card-btn{
+  min-width:96px;
+  height:50px;
+  border:none;
+  border-radius:16px;
+
+  font-size:18px;
+  font-weight:600;
+
+  cursor:pointer;
+  transition:0.2s;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* EDIT */
+
+.edit-btn{
+  background:#7d7313;
+  color:white;
+}
+
+/* GANTI */
+
+.ganti-btn{
+  background:#efefef;
+  color:#111;
+}
+
+/* LOGOUT */
+
+.logout-btn{
+  background:#ef553f;
+  color:white;
+}
+
+.card-btn:hover{
+  transform:translateY(-2px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1100px){
+
+  .pengaturan-main{
+    margin-left:0;
+    padding:28px;
+  }
+
+  .pengaturan-header h1{
+    font-size:52px;
+  }
+
+  .pengaturan-card{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:24px;
+  }
+
+}
+
+.popup-overlay{
+  position:fixed;
+  inset:0;
+
+  background:rgba(0,0,0,0.35);
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  z-index:9999;
+}
+
+.popup-form{
+  width:760px;
+  max-height:90vh;
+
+  overflow-y:auto;
+
+  background:white;
+
+  border-radius:24px;
+
+  padding:32px;
+}
+
+.profile-header{
+  display:flex;
+  gap:20px;
+  align-items:center;
+
+  margin-bottom:24px;
+}
+
+.avatar-large{
+  width:110px;
+  height:110px;
+
+  border-radius:50%;
+
+  background:#c5ab18;
+  color:white;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:42px;
+  font-weight:700;
+}
+
+.verified-badge{
+  display:inline-block;
+
+  margin-top:8px;
+
+  background:#dcebd9;
+
+  color:#2d7c35;
+
+  padding:6px 12px;
+
+  border-radius:20px;
+
+  font-size:14px;
+}
+
+.popup-form hr{
+  margin:24px 0;
+  border:none;
+  border-top:1px solid #ddd;
+}
+
+.popup-form label{
+  display:block;
+
+  margin-top:18px;
+  margin-bottom:8px;
+
+  font-weight:600;
+}
+
+.popup-form input,
+.popup-form textarea{
+  width:100%;
+
+  padding:14px;
+
+  border:1px solid #ddd;
+
+  border-radius:12px;
+
+  font-size:15px;
+}
+
+.save-profile-btn{
+  margin-top:24px;
+
+  background:#6f7d24;
+
+  color:white;
+
+  border:none;
+
+  padding:14px 24px;
+
+  border-radius:12px;
+
+  font-size:16px;
+  font-weight:600;
+
+  cursor:pointer;
+}

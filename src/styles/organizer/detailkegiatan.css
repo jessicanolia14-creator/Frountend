@@ -1,0 +1,173 @@
+.detail-layout{
+  display:flex;
+  min-height:100vh;
+  background:#f4f1e8;
+}
+
+.detail-main{
+  flex:1;
+  margin-left:300px;
+  padding:30px;
+  box-sizing:border-box;
+}
+
+.detail-container{
+  background:#fff;
+  border-radius:24px;
+  padding:30px;
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.detail-topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:25px;
+}
+
+.detail-search{
+  flex:1;
+}
+
+.detail-search input{
+  width:420px;
+  padding:14px 20px;
+  border:1px solid #d8d1c0;
+  border-radius:12px;
+  font-size:16px;
+  background:white;
+}
+
+.detail-icons{
+  display:flex;
+  gap:18px;
+  color:#6f6b25;
+}
+
+.breadcrumb{
+  display:flex;
+  gap:10px;
+  margin-bottom:25px;
+  font-weight:500;
+  color:#888;
+}
+
+.breadcrumb .active{
+  color:#6f6b25;
+}
+
+.detail-content{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:25px;
+}
+
+.detail-left{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  min-width:0;
+}
+
+.detail-left h1{
+  font-size:56px;
+  font-weight:700;
+  color:#7a6f13;
+  margin:25px 0 20px;
+  line-height:1.2;
+}
+
+.detail-images{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:16px;
+  margin-bottom:24px;
+}
+
+.detail-images img{
+  width:100%;
+  height:140px;
+  object-fit:cover;
+  border-radius:14px;
+  display:block;
+}
+
+.detail-info{
+  display:grid;
+  grid-template-columns:repeat(2, max-content);
+  column-gap:50px;
+  row-gap:14px;
+  margin-bottom:30px;
+}
+
+.detail-info span{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:18px;
+}
+
+.detail-description{
+  margin-top:20px;
+}
+
+.detail-description h3{
+  margin-bottom:14px;
+}
+
+.detail-description p{
+  line-height:1.8;
+  color:#444;
+  font-size:16px;
+}
+
+.detail-right{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.contact-card,
+.activity-card{
+  border-radius:16px;
+  padding:24px;
+  background:#f5f0e8;
+}
+
+.contact-card h3,
+.activity-card h3{
+  margin-bottom:18px;
+}
+
+.contact-user{
+  display:flex;
+  gap:12px;
+  margin-bottom:18px;
+}
+
+.contact-user img{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+}
+
+.contact-card button{
+  width:100%;
+  height:42px;
+  margin-top:10px;
+  border:none;
+  border-radius:8px;
+  background:#ffffff;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.activity-card ul{
+  padding-left:18px;
+}
+
+.activity-card li{
+  margin-bottom:12px;
+  line-height:1.5;
+}
