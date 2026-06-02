@@ -1,0 +1,164 @@
+/* Users.css */
+.users-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-card {
+  background: var(--white);
+  border-radius: 14px;
+  padding: 24px 28px;
+  box-shadow: 0 1px 4px rgba(65,67,27,0.06);
+}
+
+.page-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.page-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dark-olive);
+}
+
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 11px;
+  color: var(--sage);
+  pointer-events: none;
+}
+
+.search-input {
+  height: 38px;
+  border: 1.5px solid var(--blush);
+  border-radius: 8px;
+  padding: 0 14px 0 34px;
+  font-size: 13px;
+  color: var(--dark-olive);
+  background: var(--cream-light);
+  outline: none;
+  width: 220px;
+  transition: border-color 0.15s;
+}
+.search-input:focus {
+  border-color: var(--sage);
+  background: var(--white);
+}
+
+.filter-select {
+  height: 38px;
+  border: 1.5px solid var(--blush);
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 13px;
+  color: var(--dark-olive);
+  background: var(--cream-light);
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+.filter-select:focus {
+  border-color: var(--sage);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--dark-olive);
+  text-align: left;
+  padding: 0 0 12px 0;
+  border-bottom: 1.5px solid var(--cream);
+}
+
+.data-table td {
+  font-size: 14px;
+  color: var(--dark-olive);
+  padding: 14px 0;
+  border-bottom: 1px solid var(--cream-light);
+}
+
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.bold-cell { font-weight: 700; }
+.muted-cell { color: #888; font-size: 13px; }
+
+.empty-row {
+  text-align: center;
+  color: var(--sage);
+  padding: 32px 0 !important;
+  font-size: 14px;
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.role-relawan {
+  background: var(--cream);
+  color: var(--dark-olive);
+  border: 1px solid var(--blush);
+}
+
+.role-organizer {
+  background: var(--sage-light);
+  color: var(--dark-olive);
+  border: 1px solid var(--sage);
+}
+
+.status-dot {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status-dot::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.dot-aktif { color: #2e7d32; }
+.dot-aktif::before { background: #43a047; }
+
+.dot-nonaktif { color: #999; }
+.dot-nonaktif::before { background: #bbb; }
+
+.table-footer {
+  margin-top: 16px;
+  font-size: 12px;
+  color: var(--sage);
+  text-align: right;
+}
